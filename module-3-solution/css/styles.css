@@ -1,1 +1,38 @@
+body {
+  font-family: roboto, helvetica, arial, sans-serif;
+}
 
+h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.container, .container-fluid {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+
+.navbar-default {
+  margin: 0;
+}
