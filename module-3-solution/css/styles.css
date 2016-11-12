@@ -1,17 +1,44 @@
+
+/* Bootstrap CSS Overrides */
+
+.container, .container-fluid {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+
+.navbar-default {
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  corner-radius: 0;
+  background: teal;
+}
+
+/* link styles */
+.navbar-default .navbar-nav>li>a {
+  font-size: 1.5em;
+}
+
+
+/* My CSS */
+
 body {
   font-family: roboto, helvetica, arial, sans-serif;
+  color: 333333;
 }
 
 h1 {
   font-size: 2em;
   margin: 0;
-  padding: 0;
+  padding: 1.5em;
 }
 
 h2 {
   font-size: 1.75em;
   margin: 0;
   padding: 0;
+  padding-bottom: .75em;
 }
 
 p {
@@ -20,19 +47,13 @@ p {
   padding: 0;
 }
 
-/*
-.container, .container-fluid {
-  width: 90%;
-  margin: auto;
-  padding: 0;
+.tile {
+  background-color: grey;
+  padding: 2em;
 }
 
 .wrapper {
   margin: 0;
   padding: 0;
   background-color: red;
-}
-
-.navbar-default {
-  margin: 0;
 }
