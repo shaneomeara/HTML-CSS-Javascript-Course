@@ -1,4 +1,3 @@
-/* Bootstrap CSS Overrides */
 
 .container, .container-fluid {
   width: 90%;
@@ -7,7 +6,65 @@
   padding: 0;
 }
 
-/* Navbar Styles */
+body {
+  font-family: roboto, helvetica, arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0;
+  padding-top: .25em;
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links within sections */
+p>a:link, p>a:visited, p>a:active, p>a:focus, p>a:hover{
+  color: rgba(18, 128, 127, 1);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p>a:hover {
+  color: rgba(18, 128, 127, .8);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.tile {
+  background-color: rgba(18, 128, 127, .2);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+.back-to-top {
+  padding-right: 20px;
+}
+
+/* Navigation Styles */
 
 .navbar {
   margin-bottom: 0px;
@@ -22,7 +79,7 @@
   padding-bottom: 2em;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: teal;
+  background-color: color: rgba(18, 128, 127, 1);
 }
 
 .navbar-default .navbar-brand {
@@ -39,8 +96,6 @@
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: rgba(255, 255, 255, .6);
 }
-
-/* Below: Mobile Menu Button */
 
 .navbar-toggle {
   border-width: 2px;
@@ -68,57 +123,4 @@
 .navbar-collapse {
   box-shadow: inset 0 0 0 0;
   border: 0;
-}
-
-
-/* My CSS - Basic */
-
-body {
-  font-family: roboto, helvetica, arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-p>a:link, p>a:visited, p>a:active, p>a:focus, p>a:hover {
-  color: teal;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.25em;
-}
-
-h3 {
-  font-size: 2em;
-  margin: 0;
-  padding-top: .25em;
-  padding-bottom: 1em;
-}
-
-p {
-  font-size: 1.25em;
-  margin: 0;
-  padding: 0;
-}
-
-.tile {
-  background-color: rgba(18, 128, 127, .2);
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2.5em;
-  padding-bottom: 3em;
-}
-
-.wrapper {
-  padding: 1em;
-}
-
-.back-to-top {
-  padding-right: 20px;
 }
