@@ -1,45 +1,30 @@
 
-/* Bootstrap CSS Overrides */
-
 .container, .container-fluid {
   width: 90%;
+  margin-top:0;
   margin: auto;
   padding: 0;
 }
 
-.navbar-default {
-  margin: 0;
-  corner-radius: 0;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background: teal;
-}
-
-
-/* link Styles */
-.navbar-default .navbar-nav>li>a {
-  font-size: 1.5em;
-}
-
-
-/* My CSS - Basic */
-
 body {
   font-family: roboto, helvetica, arial, sans-serif;
-  color: 333;
-}
-
-h1 {
+  color: #333;
   margin: 0;
-  font-size: 2.5em;
-  padding: 1em;
+  padding: 0;
 }
 
 h2 {
-  font-size: 1.75em;
   margin: 0;
-  padding: 0;
-  padding-bottom: .75em;
+  font-size: 2.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0;
+  padding-top: .25em;
+  padding-bottom: 1em;
 }
 
 p {
@@ -48,9 +33,27 @@ p {
   padding: 0;
 }
 
+/* Links within sections */
+p>a:link, p>a:visited, p>a:active, p>a:focus, p>a:hover{
+  color: rgba(18, 128, 127, 1);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p>a:hover {
+  color: rgba(18, 128, 127, .8);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 .tile {
-  background-color: #ccc;
-  padding: 2em;
+  background-color: rgba(18, 128, 127, .2);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
 }
 
 .wrapper {
@@ -61,29 +64,63 @@ p {
   padding-right: 20px;
 }
 
-/* CSS - Breakpoints */
+/* Navigation Styles */
 
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
+.navbar {
+  margin-bottom: 0px;
 }
 
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
+.navbar-default .navbar-nav>li>a {
+  color: rgba(255, 255, 255, .9);
 }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
+.navbar-default {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: color: rgba(18, 128, 127, 1);
 }
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 2em;
+  padding-top: 22px;
+  padding-bottom: 0;
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: rgba(255, 255, 255, .6);
+}
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: rgba(255, 255, 255, .6);
+}
+
+.navbar-toggle {
+  border-width: 2px;
+  border-radius: .75em;
+  border-color: #fff;
+  padding: 1em;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.navbar-nav>li>a {
+  font-size: 1.75em;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  padding-top: 1em;
+}
+
+.navbar-collapse {
+  box-shadow: inset 0 0 0 0;
+  border: 0;
 }
