@@ -1,24 +1,67 @@
-
 /* Bootstrap CSS Overrides */
 
 .container, .container-fluid {
   width: 90%;
+  margin-top:0;
   margin: auto;
   padding: 0;
 }
 
-.navbar-default {
-  margin: 0;
-  corner-radius: 0;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background: teal;
+
+/* Navbar Styles */
+
+.navbar {
+  margin-bottom: 0px;
 }
 
+.navbar-default {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: #333;
+}
 
-/* link Styles */
-.navbar-default .navbar-nav>li>a {
+.navbar-brand {
+  font-size: 2em;
+  padding-top: 22px;
+  padding-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-collapse {
+  padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #ccc;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  border-width: 2px;
+  border-radius: .75em;
+  border-color: #fff;
+  padding: 1em;
+}
+
+.navbar-nav>li>a {
   font-size: 1.5em;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  padding-top: 1em;
+}
+
+.navbar-collapse {
+  box-shadow: inset 0 0 0 0;
+  border: 0;
 }
 
 
@@ -27,19 +70,22 @@
 body {
   font-family: roboto, helvetica, arial, sans-serif;
   color: 333;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   margin: 0;
   font-size: 2.5em;
-  padding: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.25em;
 }
 
-h2 {
-  font-size: 1.75em;
+h3 {
+  font-size: 2em;
   margin: 0;
-  padding: 0;
-  padding-bottom: .75em;
+  padding-top: .25em;
+  padding-bottom: 1em;
 }
 
 p {
@@ -50,7 +96,10 @@ p {
 
 .tile {
   background-color: #ccc;
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
 }
 
 .wrapper {
