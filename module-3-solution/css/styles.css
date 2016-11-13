@@ -7,11 +7,14 @@
   padding: 0;
 }
 
-
 /* Navbar Styles */
 
 .navbar {
   margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgba(255, 255, 255, .9);
 }
 
 .navbar-default {
@@ -19,30 +22,25 @@
   padding-bottom: 2em;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: #333;
+  background-color: teal;
 }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
+  color: #fff;
   font-size: 2em;
   padding-top: 22px;
   padding-bottom: 0;
 }
 
-.navbar-default .navbar-brand {
-  color: #fff;
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: rgba(255, 255, 255, .6);
 }
 
-.navbar-collapse {
-  padding: 0px;
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: rgba(255, 255, 255, .6);
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #ccc;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
+/* Below: Mobile Menu Button */
 
 .navbar-toggle {
   border-width: 2px;
@@ -51,8 +49,16 @@
   padding: 1em;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
 .navbar-nav>li>a {
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 2em;
   text-align: center;
   padding: 0;
@@ -69,9 +75,16 @@
 
 body {
   font-family: roboto, helvetica, arial, sans-serif;
-  color: 333;
+  color: #333;
   margin: 0;
   padding: 0;
+}
+
+p>a:link, p>a:visited, p>a:active, p>a:focus, p>a:hover {
+  color: teal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 h1 {
@@ -95,7 +108,7 @@ p {
 }
 
 .tile {
-  background-color: #ccc;
+  background-color: rgba(18, 128, 127, .2);
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2.5em;
@@ -108,31 +121,4 @@ p {
 
 .back-to-top {
   padding-right: 20px;
-}
-
-/* CSS - Breakpoints */
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
 }
