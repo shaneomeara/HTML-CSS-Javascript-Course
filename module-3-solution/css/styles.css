@@ -1,0 +1,89 @@
+
+/* Bootstrap CSS Overrides */
+
+.container, .container-fluid {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+
+.navbar-default {
+  margin: 0;
+  corner-radius: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: teal;
+}
+
+
+/* link Styles */
+.navbar-default .navbar-nav>li>a {
+  font-size: 1.5em;
+}
+
+
+/* My CSS - Basic */
+
+body {
+  font-family: roboto, helvetica, arial, sans-serif;
+  color: 333;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  padding: 1em;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+  padding-bottom: .75em;
+}
+
+p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.tile {
+  background-color: #ccc;
+  padding: 2em;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+.back-to-top {
+  padding-right: 20px;
+}
+
+/* CSS - Breakpoints */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
